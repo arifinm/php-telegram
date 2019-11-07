@@ -1,0 +1,20 @@
+{
+    "name": "arifinm/php-telegram",
+    "description": "Telegram Notification for PHP",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+    	"php": ">= 5.6"
+    },
+    "authors": [
+        {
+            "name": "M. Arifin",
+            "email": "m.arifin@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "arifinm\\telegram\\": "src/"
+        }
+    },
+}
