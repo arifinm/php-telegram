@@ -1,11 +1,11 @@
 <?php
 
-namespace arifinm\telegram\components;
+namespace arifinm\telegram;
 
 class TelegramNotification
 {
     /* Send message without photo */
-    public static function sendMessage($botToken, $chatID, $message, $mode='markdown') 
+    public static function sendMessage($botToken, $chatID, $message, $mode='markdown')
     {
         $bot_url = "https://api.telegram.org/bot$botToken/";
         $url = $bot_url."sendMessage?chat_id=".$chatID."&parse_mode=".$mode."&text=".urlencode($message);
